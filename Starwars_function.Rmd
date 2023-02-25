@@ -1,0 +1,61 @@
+---
+title: "Starwars"
+author: "Pierson Cooke"
+date: "2023-02-23"
+output: html_document
+---
+
+
+```{r}
+
+library(RJSONIO)
+library(tidyverse)
+
+starwarsFunction <- function(file_path, movie) {
+  
+  data <- RJSONIO::fromJSON(file_path)
+
+  nodes <- 
+    data[1] %>% 
+    unlist() %>% 
+    unlist() %>% 
+    matrix(ncol = 3, byrow = T) %>% 
+    as_data_frame() %>% 
+    rename(MovieChar = V1, 
+           Scenes = V2,
+           Color = V3) %>%
+    mutate(Film = movie, 
+           UniqueID = row_number() - 1,
+           MovieChar = tolower(MovieChar)) %>% 
+    relocate(UniqueID, everything())
+
+  link <-
+    data[2] %>% 
+    unlist() %>% 
+    unlist() %>% 
+    matrix(ncol = 3, byrow = T) %>% 
+    as_data_frame() %>% 
+    rename(Source = V1, 
+           Targtet = V2,
+           Value = V3) %>%
+    mutate(Film = movie)
+  
+  return(list(nodes = nodes, link = link))
+
+}
+
+```
+
+```{r}
+
+ep1_mentions <- starwarsFunction("/Users/piersoncooke/Desktop/star-wars-network-data-master/starwars-episode-1-mentions.json", "Episode1")
+
+ep1_mentions_nodes <- ep1_mentions$nodes
+ep1_mentions_links <- ep1_mentions$link
+
+starwars <- starwars
+starwars$name <- tolower(starwars$name)
+
+ep1_mentions_nodes[which(ep1_mentions_nodes$MovieChar %in% starwars$name), ]
+```
+
