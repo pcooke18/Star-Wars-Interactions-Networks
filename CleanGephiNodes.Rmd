@@ -1,0 +1,63 @@
+---
+title: "Clean Gephi Data"
+author: "Pierson Cooke"
+date: "2023-02-28"
+output: html_document
+---
+
+```{r warning=FALSE}
+library(tidyverse)
+library(dplyr)
+
+nodes <- read.csv("/Users/piersoncooke/Desktop/star-wars-network-data-master/Networks-Project/nodes_full.csv")
+```
+
+There are a lot of Affiliations with just a single character, which makes it somewhat difficult to visualize in Gephi. Therefore, we chose to group all the Affiliations with less than 4 characters into a group called "Other" because we believe that looking into Affiliations with very few characters won't help much with out analysis.
+```{r}
+
+(affiliation_table <- table(nodes$Affiliations))
+
+nodes$Affiliations <- ifelse(nodes$Affiliations %in% 
+                               names(affiliation_table[affiliation_table >= 4]), 
+                             nodes$Affiliations, "Other")
+
+table(nodes$Affiliations)
+```
+
+Similarly, we did the same thing with the locations of each character. We took some steps to clean the data in order to correct any spelling mistakes and to assign one-off locations into another group. The locations column shows where characters spent a majority of their time and we subsequently chose 3 as the cutoff to weed out any locations that didn't have at least 3 characters who spent a majority of time there.
+```{r}
+(location_table <- table(nodes$Locations))
+
+nodes$Locations[nodes$Locations == "Coruscant / Malastare"] <- "Coruscant"
+nodes$Locations[nodes$Locations == "Death Star II"] <- "Death Star"
+nodes$Locations[nodes$Locations == "Jabba's Palce"] <- "Jabba's Palace"
+nodes$Locations[nodes$Locations == "Kaminon"] <- "Kamino"
+nodes$Locations[nodes$Locations == "Kamino"] <- "Kamino"
+nodes$Locations[nodes$Locations == "Naboo, Death Star II"] <- "Naboo"
+
+nodes$Locations <- ifelse(nodes$Locations %in% names(location_table[location_table >= 3]), 
+                             nodes$Locations, "Other")
+
+table(nodes$Locations)
+```
+
+Finally, we replicated the steps above to clean the column indicating which species each character falls under. 
+```{r}
+
+nodes$Species.Droids[is.na(nodes$Species.Droids)] <- "Unknown"
+
+nodes$Species.Droids[nodes$Species.Droids == "Human "] <- "Human"
+
+(species_table <- table(nodes$Species.Droids))
+
+nodes$Species.Droids <- ifelse(nodes$Species.Droids %in% 
+                               names(species_table[species_table >= 2]), 
+                             nodes$Species.Droids, "Other")
+
+table(nodes$Species.Droids)
+```
+
+```{r}
+write.csv(nodes, "/Users/piersoncooke/Desktop/star-wars-network-data-master/Networks-Project/nodes_cleaned.csv", row.names = FALSE)
+```
+

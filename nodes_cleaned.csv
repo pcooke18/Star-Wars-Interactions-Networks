@@ -1,0 +1,111 @@
+"Id","Names","Scenes","Affiliations","Locations","Species.Droids","Episode1","Episode2","Episode3","Episode4","Episode5","Episode6"
+0,"qui-gon",61,"Jedi Order","Other","Human",1,0,0,0,0,0
+1,"nute gunray",24,"Confederacy of Independent Systems","Other","Neimoidian",1,1,1,0,0,0
+2,"pk-4",3,"Trade Federation","Naboo","Droid",1,0,0,0,0,0
+3,"tc-14",4,"Trade Federation","Naboo","Droid",1,0,0,0,0,0
+4,"obi-wan",147,"Jedi Order","Other","Human",1,1,1,1,1,1
+5,"dofine",3,"Trade Federation","Other","Neimoidian",1,0,0,0,0,0
+6,"rune",10,"Trade Federation","Other","Neimoidian",1,1,1,0,0,0
+7,"tey how",4,"Trade Federation","Other","Neimoidian",1,0,0,0,0,0
+8,"emperor",51,"Sith","Naboo","Human",1,1,1,0,1,1
+9,"captain panaka",19,"Other","Naboo","Human",1,0,0,0,0,0
+10,"sio bibble",8,"Other","Naboo","Human",1,1,1,0,0,0
+11,"jar jar",41,"Other","Naboo","Gungan",1,1,1,0,0,0
+12,"tarpals",3,"Other","Naboo","Gungan",1,0,0,0,0,0
+13,"boss nass",4,"Other","Naboo","Gungan",1,0,1,0,0,0
+14,"padme",74,"Other","Naboo","Human",1,1,1,0,0,0
+15,"ric olie",11,"Other","Naboo","Human",1,0,0,0,0,0
+16,"watto",8,"Other","Tatooine","Other",1,1,0,0,0,0
+17,"anakin",131,"Jedi Order","Tatooine","Human",1,1,1,0,0,1
+18,"sebulba",3,"Other","Tatooine","Other",1,0,0,0,0,0
+19,"jira",3,"Other","Tatooine","Human",1,0,0,0,0,0
+20,"shmi",11,"Other","Tatooine","Human",1,1,0,0,0,0
+21,"c-3po",150,"Rebel Alliance","Tatooine","Droid",1,1,1,1,1,1
+22,"darth maul",5,"Sith","Other","Other",1,0,0,0,0,0
+23,"kitster",4,"Other","Tatooine","Human",1,0,0,0,0,0
+24,"wald",3,"Other","Tatooine","Rodian",1,0,0,0,0,0
+25,"fode/beed",11,"Other","Tatooine","Other",1,0,0,0,0,0
+26,"jabba",7,"Other","Tatooine","Other",1,0,0,1,0,1
+27,"greedo",3,"Other","Tatooine","Rodian",0,0,0,1,0,0
+28,"valorum",3,"Galactic Republic","Other","Human",1,0,0,0,0,0
+29,"mace windu",22,"Jedi Order","Other","Human",1,1,0,0,0,0
+30,"ki-adi-mundi",6,"Jedi Order","Other","Other",1,1,1,0,0,0
+31,"yoda",45,"Jedi Order","Other","Unknown",1,1,1,0,1,1
+32,"rabe",2,"Galactic Republic","Naboo","Human",1,0,0,0,0,0
+33,"bail organa",23,"Galactic Republic","Alderaan","Human",0,1,1,0,0,0
+34,"general ceel",4,"Other","Naboo","Gungan",1,0,0,0,0,0
+35,"bravo two",5,"Galactic Republic","Naboo","Human",1,0,0,0,0,0
+36,"bravo three",3,"Galactic Republic","Naboo","Human",1,0,0,0,0,0
+37,"captain typho",6,"Other","Naboo","Human",0,1,1,0,0,0
+38,"senator ask aak",3,"Other","Coruscant","Other",0,1,0,0,0,0
+39,"orn free taa",3,"Other","Other","Twi'lek",1,1,1,0,0,0
+40,"sola",3,"Galactic Republic","Naboo","Human",1,1,0,0,0,0
+41,"jobal",3,"Galactic Republic","Naboo","Human",0,1,0,0,0,0
+42,"ruwee",4,"Galactic Republic","Naboo","Human",0,1,0,0,0,0
+43,"taun we",7,"Other","Other","Kaminoan",0,1,0,0,0,0
+44,"lama su",8,"Other","Other","Kaminoan",0,1,0,0,0,0
+45,"boba fett",10,"Other","Other","Human",0,1,0,1,1,1
+46,"jango fett",5,"Other","Other","Human",0,1,0,0,0,0
+47,"owen",10,"Other","Tatooine","Human",0,1,1,1,0,0
+48,"beru",6,"Other","Tatooine","Human",0,1,1,1,0,0
+49,"cliegg",3,"Other","Tatooine","Human",0,1,0,0,0,0
+50,"count dooku",9,"Sith","Other","Human",0,1,1,0,0,0
+51,"sun rit",3,"Confederacy of Independent Systems","Other","Geonosian",0,0,1,0,0,0
+52,"poggle",3,"Confederacy of Independent Systems","Other","Geonosian",0,1,1,0,0,0
+53,"plo koon",3,"Jedi Order","Other","Other",1,1,1,0,0,0
+54,"odd ball",4,"Galactic Republic","Coruscant","Human",0,0,1,0,0,0
+55,"general grievous",12,"Confederacy of Independent Systems","Other","Droid",0,0,1,0,0,0
+56,"fang zar",3,"Galactic Republic","Coruscant","Human",0,0,1,0,0,0
+57,"mon mothma",4,"Galactic Republic","Other","Human",0,0,1,0,0,1
+58,"giddean danu",2,"Galactic Republic","Coruscant","Human",0,0,1,0,0,0
+59,"clone commander gree",4,"Galactic Republic","Other","Human",0,0,1,0,0,0
+60,"clone commander cody",4,"Galactic Republic","Other","Human",0,0,1,0,0,0
+61,"tion medon",3,"Other","Other","Other",0,0,1,0,0,0
+62,"captain antilles",3,"Rebel Alliance ","Alderaan","Human",0,0,0,1,0,0
+63,"darth vader",58,"Sith","Death Star","Human",0,0,1,1,1,1
+64,"luke",160,"Other","Tatooine","Human",0,0,1,1,1,1
+65,"camie",3,"Other","Tatooine","Human",0,0,0,1,0,0
+66,"biggs",18,"Rebel Alliance","Tatooine","Human",0,0,0,1,1,0
+67,"leia",98,"Rebel Alliance","Alderaan","Human",0,0,0,1,1,1
+68,"motti",3,"Other","Death Star","Human",0,0,0,1,0,0
+69,"tarkin",12,"Other","Death Star","Human",0,0,1,1,0,0
+70,"han",169,"Rebel Alliance","Other","Human",0,0,0,1,1,1
+71,"dodonna",3,"Rebel Alliance","Other","Human",0,0,0,1,0,0
+72,"gold leader",14,"Rebel Alliance","Death Star","Human",0,0,0,1,0,0
+73,"wedge",28,"Rebel Alliance","Other","Human",0,0,0,1,1,1
+74,"red leader",33,"Rebel Alliance","Other","Human",0,0,0,1,0,0
+75,"red ten",8,"Rebel Alliance","Death Star","Human",0,0,0,1,0,0
+76,"gold five",8,"Rebel Alliance","Death Star","Human",0,0,0,1,0,0
+77,"rieekan",7,"Rebel Alliance","Alderaan","Human",0,0,0,0,1,0
+78,"derlin",3,"Rebel Alliance","Hoth ","Human",0,0,0,0,1,0
+79,"zev",6,"Rebel Alliance ","Hoth ","Human",0,0,0,0,1,0
+80,"piett",12,"The Galactic Empire ","Other","Human",0,0,0,0,1,0
+81,"ozzel",3,"The Galactic Empire ","Other","Human",0,0,0,0,1,0
+82,"dack",4,"Rebel Alliance ","Hoth ","Human",0,0,0,0,1,0
+83,"janson",4,"Rebel Alliance ","Hoth ","Human",0,0,0,0,1,0
+84,"needa",3,"The Galactic Empire ","Hoth ","Human",0,0,0,0,1,0
+85,"lando",41,"Rebel Alliance ","Other","Human",0,0,0,0,1,1
+86,"jerjerrod",3,"The Galactic Empire ","Other","Human",0,0,0,0,0,1
+87,"bib fortuna",3,"Other","Other","Twi'lek",0,0,0,0,0,1
+88,"boushh",3,"Other","Other","Human",0,0,0,0,0,1
+89,"admiral ackbar",12,"Rebel Alliance","Other","Other",0,0,0,1,1,1
+90,"lor san tekka",4,"Other","Jakku","Human",0,0,0,0,0,0
+91,"poe",30,"The Resistance","Other","Human",0,0,0,0,0,0
+92,"kylo ren",22,"The First Order","Other","Human",0,0,0,0,1,0
+93,"captain phasma",6,"The First Order","Other","Human",0,0,0,0,0,0
+94,"finn",63,"The Resistance","Jakku","Human",0,0,0,0,0,0
+95,"unkar plutt",5,"Other","Jakku","Other",0,0,0,0,0,0
+96,"rey",56,"The Resistance","Jakku","Human",0,0,0,0,0,0
+97,"general hux",14,"The First Order","Other","Human",0,0,0,0,0,0
+98,"lieutenant mitaka",3,"The First Order","Other","Human",0,0,0,0,0,0
+99,"bala-tik",4,"Other","Other","Human",0,0,0,0,0,0
+100,"snoke",4,"Other","Other","Unknown",0,0,0,1,1,1
+101,"maz",6,"The Resistance ","Other","Other",0,0,0,0,0,0
+102,"bb-8",2,"The Resistance ","Other","Droid",0,0,0,0,0,0
+103,"snap",5,"The Resistance","Other","Human",0,0,0,0,0,0
+104,"admiral statura",3,"The Resistance ","Other","Human",0,0,0,0,0,0
+105,"yolo ziff",3,"The Resistance ","Other","Human",0,0,0,0,0,0
+106,"colonel datoo",3,"The First Order","Other","Human",0,0,0,0,0,0
+107,"ello asty",4,"The Resistance","Other","Other",0,0,0,0,0,0
+108,"jess",4,"The Resistance","Other","Human",0,0,0,0,0,0
+109,"niv lek",3,"The Resistance","Other","Human",0,0,0,0,0,0

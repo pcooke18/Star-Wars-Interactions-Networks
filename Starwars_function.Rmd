@@ -11,7 +11,7 @@ output: html_document
 library(RJSONIO)
 library(tidyverse)
 
-starwarsFunction <- function(file_path, movie) {
+starwarsFunction <- function(file_path) {
   
   data <- RJSONIO::fromJSON(file_path)
 
@@ -24,8 +24,7 @@ starwarsFunction <- function(file_path, movie) {
     rename(MovieChar = V1, 
            Scenes = V2,
            Color = V3) %>%
-    mutate(Film = movie, 
-           UniqueID = row_number() - 1,
+    mutate(UniqueID = row_number() - 1,
            MovieChar = tolower(MovieChar)) %>% 
     relocate(UniqueID, everything())
 
@@ -37,8 +36,7 @@ starwarsFunction <- function(file_path, movie) {
     as_data_frame() %>% 
     rename(Source = V1, 
            Targtet = V2,
-           Value = V3) %>%
-    mutate(Film = movie)
+           Value = V3)
   
   return(list(nodes = nodes, link = link))
 
@@ -48,14 +46,19 @@ starwarsFunction <- function(file_path, movie) {
 
 ```{r}
 
-ep1_mentions <- starwarsFunction("/Users/piersoncooke/Desktop/star-wars-network-data-master/starwars-episode-1-mentions.json", "Episode1")
+all_interactions <- starwarsFunction("/Users/piersoncooke/networksproject/Gephi-Data/starwars-full-interactions.json")
 
-ep1_mentions_nodes <- ep1_mentions$nodes
-ep1_mentions_links <- ep1_mentions$link
+all_interactions_nodes <- all_interactions$nodes
+all_interactions_links <- all_interactions$link
 
-starwars <- starwars
-starwars$name <- tolower(starwars$name)
+all_interactions_nodes <- all_interactions_nodes[,-4]
 
-ep1_mentions_nodes[which(ep1_mentions_nodes$MovieChar %in% starwars$name), ]
+all_interactions_links$Type <- "Undirected"
+
+write.csv(all_interactions_nodes, "/Users/piersoncooke/Desktop/star-wars-network-data-master/Networks-Project/nodes.csv", 
+          row.names = FALSE)
+
+write.csv(all_interactions_links, "/Users/piersoncooke/Desktop/star-wars-network-data-master/Networks-Project/links.csv", 
+          row.names = FALSE)
 ```
 
