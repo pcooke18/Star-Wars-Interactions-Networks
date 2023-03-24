@@ -13,4 +13,6 @@ This network uses color to indicate weighted degree, a metric used that takes th
 
 ![Weighted_simple](https://user-images.githubusercontent.com/98417196/226241930-a1d8c259-31ef-4b6b-83b3-acf9bb41ea86.png)
 
+## Conclusion
+
 For those who are fans of Star Wars, it should come as no surprise that characters like Obi Wan and Anakin are some of the  most influential characters, but this information is important to note when analyzing the overall character network. We specifically focused on these influential characters when analyzing the effectivness of each variable in being ablle to determine the number of interactions between characters in the Star Wars universe. Ultimately, we found support for out hypothesis that Affiliations is a better way to understand the interaction network than variables like species or location. Our complete findings can be found in the Final Report document. Thank you for reading and may the force be with you!
